@@ -13,6 +13,7 @@ Rok szkolny 2023/2024
 
 ## Założenia
 
+- wejście do sali, wpisanie się na listę
 - commit na koniec lekcji (wszyscy)
 - Przerwa: **9:40-10:05** (daily Kamila)
 
@@ -36,4 +37,7 @@ Rok szkolny 2023/2024
 ## Linki
 
 [Roadmapy](https://roadmap.sh)
+
 [Expo Snack](https://snack.expo.dev/) - playground online dla RN
+
+[TS for React](https://github.com/typescript-cheatsheets/react)
