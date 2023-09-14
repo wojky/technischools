@@ -27,7 +27,8 @@ Rok szkolny 2023/2024
 - minimum dwa ekrany (routing)
 - obsługa asynchroniczności (dane ciągniemy z bazy danych)
 - dokumentacja: jak uruchomić środowisko deweloperskie
-- historia i jakość commitów commitów
+- historia i jakość commitów
+- typescript
 
 #### Wymagania biznesowe
 
