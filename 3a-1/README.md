@@ -1,4 +1,4 @@
-# 3a, grupa 2
+# 3a, grupa 1
 
 ## Linki do projektów
 
