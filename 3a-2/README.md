@@ -7,7 +7,7 @@ Wypełniamy według wzoru:
 
 1.
 2.
-3.
+3.sebtrz https://github.com/SebTrz/pustyProjekt
 4.
 5.
 6.
