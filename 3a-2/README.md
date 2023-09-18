@@ -1,9 +1,11 @@
 # 3a, grupa 2
 
+HASŁO DO WIFI: TS2023!@%
+
 ## Linki do projektów
 
 Wypełniamy według wzoru:
-`15. kamwoj http://link.com`
+`0. kamwoj http://link.com`
 
 1.
 2.
@@ -19,3 +21,4 @@ Wypełniamy według wzoru:
 12.
 13.
 14.
+15.
