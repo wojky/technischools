@@ -5,7 +5,7 @@
 Wypełniamy według wzoru:
 `15. kamwoj http://link.com`
 
-1. 
+1.
 2.
 3.
 4.
