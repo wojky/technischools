@@ -9,7 +9,7 @@ Wypełniamy według wzoru:
 
 1. JakKap https://github.com/GarySfer/PAMPAMPAM_JK1
 2.
-3.
+3.sebtrz https://github.com/SebTrz/pustyProjekt
 4.
 5.
 6. lewkra https://github.com/lewkrajeszczak/APKMOB.git
