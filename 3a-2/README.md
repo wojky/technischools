@@ -5,12 +5,12 @@
 Wypełniamy według wzoru:
 `15. kamwoj http://link.com`
 
-1.
+1. 
 2.
 3.
 4.
 5.
-6.
+6. lewkra https://github.com/lewkrajeszczak/APKMOB.git
 7.
 8.
 9.
