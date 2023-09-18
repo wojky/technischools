@@ -11,10 +11,10 @@ Wypełniamy według wzoru:
 2.
 3.sebtrz https://github.com/SebTrz/pustyProjekt
 4.
-5. barpre https://github.com/ArtishGH/mobile-app-coding
+5.
 6. lewkra https://github.com/lewkrajeszczak/APKMOB.git
 7.
-8.kacklo https://github.com/casbear/PamPam 
+8.
 9.
 10. antjez https://github.com/W00JTAS/Projekt_PAM
 11.
