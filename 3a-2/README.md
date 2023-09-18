@@ -12,7 +12,7 @@ Wypełniamy według wzoru:
 5.
 6.
 7.
-8.kacklo https://github.com/casbear/PamPam
+8.kacklo https://github.com/casbear/PamPam 
 9.
 10.
 11.
