@@ -7,12 +7,12 @@ HASŁO DO WIFI: TS2023!@%
 Wypełniamy według wzoru:
 `0. kamwoj http://link.com`
 
-1. JakKap https://github.com/GarySfer/PAMPAMPAM_JK1 
+1. JakKap https://github.com/GarySfer/PAMPAMPAM_JK1
 2.
 3.
 4.
 5.
-6.
+6. lewkra https://github.com/lewkrajeszczak/APKMOB.git
 7.
 8.
 9.
