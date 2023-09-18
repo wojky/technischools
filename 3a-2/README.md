@@ -8,7 +8,7 @@ Wypełniamy według wzoru:
 1.
 2.
 3.
-4.
+4. Jan Giżyński https://github.com/jgiz/projectzaliczeniowy
 5.
 6.
 7.
