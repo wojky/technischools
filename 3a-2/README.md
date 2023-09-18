@@ -14,7 +14,7 @@ Wypełniamy według wzoru:
 5.
 6. lewkra https://github.com/lewkrajeszczak/APKMOB.git
 7.
-8.
+8.kacklo https://github.com/casbear/PamPam 
 9.
 10. antjez https://github.com/W00JTAS/Projekt_PAM
 11.
