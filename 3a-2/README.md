@@ -9,8 +9,8 @@ Wypełniamy według wzoru:
 
 1. JakKap https://github.com/GarySfer/PAMPAMPAM_JK1
 2. JanSam https://github.com/AnanasekE/TechniPAM_s1
-3. sebtrz https://github.com/SebTrz/pustyProjekt
-4.
+3.sebtrz https://github.com/SebTrz/pustyProjekt
+4. JanGiz https://github.com/jgiz/projectzaliczeniowy
 5. barpre https://github.com/ArtishGH/mobile-app-coding
 6. lewkra https://github.com/lewkrajeszczak/APKMOB.git
 7.
