@@ -6,7 +6,7 @@ Wypełniamy według wzoru:
 `15. kamwoj http://link.com`
 
 1.
-2.
+2. jansam https://github.com/AnanasekE/TechniPAM_s1
 3.
 4.
 5.
