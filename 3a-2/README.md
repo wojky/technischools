@@ -12,11 +12,11 @@ Wypełniamy według wzoru:
 3.
 4.
 5.
-6. lewkra https://github.com/lewkrajeszczak/APKMOB.git
+6. 
 7.
 8.
 9.
-10. antjez https://github.com/W00JTAS/Projekt_PAM
+10. 
 11.
 12.
 13.
