@@ -8,7 +8,7 @@ Wypełniamy według wzoru:
 `0. kamwoj http://link.com`
 
 1. JakKap https://github.com/GarySfer/PAMPAMPAM_JK1
-2.
+2. JanSam https://github.com/AnanasekE/TechniPAM_s1
 3.sebtrz https://github.com/SebTrz/pustyProjekt
 4.
 5.
