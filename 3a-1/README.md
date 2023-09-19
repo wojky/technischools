@@ -15,7 +15,7 @@ Wypełniamy według wzoru:
 8.
 9.
 10.
-11.
+11.  julkor https://github.com/JulianKorgol/gym-mobile-apk
 12.
 13.
 14.
