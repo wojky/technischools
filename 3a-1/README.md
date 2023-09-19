@@ -1,21 +1,23 @@
 # 3a, grupa 1
 
+HASŁO DO WIFI: TS2023!@%
+
 ## Linki do projektów
 
 Wypełniamy według wzoru:
 `15. kamwoj http://link.com`
 
-1.
-2.
-3.
-4.
-5.
+1. magsat https://github.com/MagdalSaturs/AplikacjaMobilna
+2. natost https://github.com/wojky/technischools
+3. vlaada https://github.com/VladimirAdamovich1/pam-first-project
+4. ArtPiech https://github.com/ArturPiechal/PAM-project-
+5. Oliwier https://github.com/Olssson/Aplikacje_Mobilne
 6. adaczy https://github.com/niebieskiczlowiek/MobileApp-Repo.git
-7.
-8.
-9.
+7. tomogr https://github.com/Jukacz/React-Native-PAM
+8. adabla https://github.com/edgzoah/mob-apk
+9. matgon https://github.com/MateuszGontarek/mobilki
 10.
-11.
+11. julkor https://github.com/JulianKorgol/gym-mobile-apk
 12.
 13.
-14.
+14. piocho https://github.com/PiotrChoinski/pam
