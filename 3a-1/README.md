@@ -13,7 +13,7 @@ Wypełniamy według wzoru:
 4.
 5.
 6.
-7.
+7. tomogr https://github.com/Jukacz/React-Native-PAM
 8. adabla https://github.com/edgzoah/mob-apk
 9.
 10.
