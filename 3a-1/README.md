@@ -15,7 +15,7 @@ Wypełniamy według wzoru:
 6.
 7.
 8. adabla https://github.com/edgzoah/mob-apk
-9.
+9. matgon https://github.com/MateuszGontarek/mobilki
 10.
 11.
 12.
