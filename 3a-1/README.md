@@ -8,7 +8,7 @@ Wypełniamy według wzoru:
 1.
 2.
 3.
-4. Artur https://github.com/ArturPiechal/PAM-project-
+4. artpie https://github.com/ArturPiechal/PAM-project-
 5.
 6.
 7.
