@@ -10,7 +10,7 @@ Wypełniamy według wzoru:
 3.
 4.
 5.
-6.
+6. AdaCzy - https://github.com/niebieskiczlowiek/MobileApp-Repo.git
 7.
 8.
 9.
