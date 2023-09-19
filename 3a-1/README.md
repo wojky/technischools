@@ -9,7 +9,7 @@ Wypełniamy według wzoru:
 
 1. magsat https://github.com/MagdalSaturs/AplikacjaMobilna
 2. natost https://github.com/wojky/technischools
-3.
+3. vlaada https://github.com/VladimirAdamovich1/pam-first-project
 4. https://github.com/ArturPiechal/PAM-project-
 5.
 6.
@@ -17,7 +17,7 @@ Wypełniamy według wzoru:
 8. adabla https://github.com/edgzoah/mob-apk
 9. matgon https://github.com/MateuszGontarek/mobilki
 10.
-11.  julkor https://github.com/JulianKorgol/gym-mobile-apk
+11. julkor https://github.com/JulianKorgol/gym-mobile-apk
 12.
 13.
-14.
+14. piocho https://github.com/PiotrChoinski/pam
