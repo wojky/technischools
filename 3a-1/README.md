@@ -5,14 +5,14 @@
 Wypełniamy według wzoru:
 `15. kamwoj http://link.com`
 
-1. adabla https://github.com/edgzoah/mob-apk
+1.
 2.
 3.
 4.
 5.
 6.
 7.
-8.
+8. adabla https://github.com/edgzoah/mob-apk
 9.
 10.
 11.
