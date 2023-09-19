@@ -9,7 +9,7 @@ Wypełniamy według wzoru:
 2.
 3.
 4.
-5.https://github.com/Olssson/Aplikacje_Mobilne
+5.Oliwier https://github.com/Olssson/Aplikacje_Mobilnes
 6.
 7.
 8.
