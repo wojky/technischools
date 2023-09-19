@@ -1,5 +1,7 @@
 # 3a, grupa 1
 
+HASŁO DO WIFI: TS2023!@%
+
 ## Linki do projektów
 
 Wypełniamy według wzoru:
