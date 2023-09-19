@@ -5,7 +5,6 @@ HASŁO DO WIFI: TS2023!@%
 ## Linki do projektów
 
 Wypełniamy według wzoru:
-`0. kamwoj http://link.com`
 
 1. JakKap https://github.com/GarySfer/PAMPAMPAM_JK1
 2. JanSam https://github.com/AnanasekE/TechniPAM_s1
