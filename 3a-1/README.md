@@ -12,7 +12,7 @@ Wypełniamy według wzoru:
 3. vlaada https://github.com/VladimirAdamovich1/pam-first-project
 4. ArtPiech https://github.com/ArturPiechal/PAM-project-
 5.Oliwier https://github.com/Olssson/Aplikacje_Mobilnes
-6.
+6. 
 7. tomogr https://github.com/Jukacz/React-Native-PAM
 8. adabla https://github.com/edgzoah/mob-apk
 9. matgon https://github.com/MateuszGontarek/mobilki
