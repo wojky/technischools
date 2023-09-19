@@ -8,11 +8,7 @@ Wypełniamy według wzoru:
 1.
 2.
 3.
-<<<<<<< Updated upstream
-4.
-=======
 4. Artur https://github.com/ArturPiechal/PAM-project-
->>>>>>> Stashed changes
 5.
 6.
 7.
