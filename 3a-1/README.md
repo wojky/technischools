@@ -7,7 +7,7 @@ HASŁO DO WIFI: TS2023!@%
 Wypełniamy według wzoru:
 `15. kamwoj http://link.com`
 
-1.
+1. 
 2. natost https://github.com/wojky/technischools
 3.
 4. https://github.com/ArturPiechal/PAM-project-
@@ -20,4 +20,4 @@ Wypełniamy według wzoru:
 11. julkor https://github.com/JulianKorgol/gym-mobile-apk
 12.
 13.
-14.
+14. piocho https://github.com/PiotrChoinski/pam
