@@ -17,5 +17,5 @@ Wypełniamy według wzoru:
 8. adabla https://github.com/edgzoah/mob-apk
 9. matgon https://github.com/MateuszGontarek/mobilki
 10. przbrz https://github.com/Przems0n711/PAM
-11. julkor https://github.com/JulianKorgol/gym-mobile-apk
+11. julkor https://github.com/JulianKorgol/git4fit
 12. piocho https://github.com/PiotrChoinski/pam
