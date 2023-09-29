@@ -16,8 +16,8 @@ Wypełniamy według wzoru:
 8. kacklo https://github.com/casbear/PamPam 
 9. alewie https://github.com/Aloneq6996/pamparampam
 10. antjez https://github.com/W00JTAS/Projekt_PAM
-11.
-12.
-13.
+11. igonie https://github.com/EssaElToro/Pam3a
+12. miłpie https://github.com/miloZs/pamproject
+13. jakgra https://github.com/Uisb777/first_mobile_app
 14.
 15.
