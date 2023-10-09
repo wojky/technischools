@@ -42,3 +42,7 @@ Rok szkolny 2023/2024
 [Expo Snack](https://snack.expo.dev/) - playground online dla RN
 
 [TS for React](https://github.com/typescript-cheatsheets/react)
+
+[excalidraw](https://excalidraw.com/) - program do low-fi makiet / notatek
+
+[trello](https://trello.com/home) - tablica kanbanowa, zarządzanie projektem
