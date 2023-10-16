@@ -45,8 +45,6 @@ searchButtonElement.addEventListener("click", () => {
   const url =
     "https://rickandmortyapi.com/api/character/?name=" + characterName;
 
-  console.log(url);
-
   // wykonać fetcha
   fetch(url)
     .then((res) => res.json())
@@ -66,7 +64,11 @@ fetch("https://rickandmortyapi.com/api/character")
   });
 
 // funckja ma przyjac dwa arugmenty, url oraz searchParams
+// zwrocic promise z resultem
 function getData() {}
+
+getData("https://rickandmortyapi.com/api/character", { name: "rick" });
+getData("https://rickandmortyapi.com/api/episode", { episode: "S01E01" });
 
 function addCharactersToContainer(characters: Character[]) {
   for (const character of characters) {
