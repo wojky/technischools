@@ -31,22 +31,50 @@ searchButtonElement.innerText = "Search";
 
 rootElement.append(inputElement, searchButtonElement);
 
+// display character list container
+const characterListElement = document.createElement("section");
+rootElement.append(characterListElement);
+
 searchButtonElement.addEventListener("click", () => {
-  console.log(inputElement.value);
+  // wyciagnij wartosc inputa
+  const characterName = inputElement.value;
+
+  // przygotowac url wedlug dokumetancje api
+  // https://rickandmortyapi.com/api/character/?name=rick
+
+  const url =
+    "https://rickandmortyapi.com/api/character/?name=" + characterName;
+
+  console.log(url);
+
+  // wykonać fetcha
+  fetch(url)
+    .then((res) => res.json())
+    .then((response: CharacterApiResponse) => {
+      // wyswielitc postaci wyfiltrowane
+      characterListElement.innerHTML = "";
+
+      addCharactersToContainer(response.results);
+    });
 });
 
 // display list
 fetch("https://rickandmortyapi.com/api/character")
   .then((res) => res.json())
   .then((response: CharacterApiResponse) => {
-    console.log(response);
-
-    for (const character of response.results) {
-      const characterNameElement = document.createElement("p");
-      console.log(characterNameElement);
-
-      characterNameElement.innerText = character.name;
-
-      rootElement.append(characterNameElement);
-    }
+    addCharactersToContainer(response.results);
   });
+
+// funckja ma przyjac dwa arugmenty, url oraz searchParams
+function getData() {}
+
+function addCharactersToContainer(characters: Character[]) {
+  for (const character of characters) {
+    const characterNameElement = document.createElement("p");
+    console.log(characterNameElement);
+
+    characterNameElement.innerText = character.name;
+
+    characterListElement.append(characterNameElement);
+  }
+}
