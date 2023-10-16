@@ -15,16 +15,38 @@ type CharacterApiResponse = {
   results: Character[];
 };
 
+const rootElement = document.querySelector("#app") as HTMLDivElement;
+
+console.log(rootElement);
+
+// display h1
+const headingElement = document.createElement("h1");
+headingElement.innerText = "Rick and Morty";
+rootElement.append(headingElement);
+
+// display search input
+const inputElement = document.createElement("input");
+const searchButtonElement = document.createElement("button");
+searchButtonElement.innerText = "Search";
+
+rootElement.append(inputElement, searchButtonElement);
+
+searchButtonElement.addEventListener("click", () => {
+  console.log(inputElement.value);
+});
+
+// display list
 fetch("https://rickandmortyapi.com/api/character")
   .then((res) => res.json())
   .then((response: CharacterApiResponse) => {
     console.log(response);
 
-    const characterNameElement = document.createElement("p");
+    for (const character of response.results) {
+      const characterNameElement = document.createElement("p");
+      console.log(characterNameElement);
 
-    console.log(characterNameElement);
+      characterNameElement.innerText = character.name;
 
-    characterNameElement.innerText = response.results[0].name;
-
-    document.body.append(characterNameElement);
+      rootElement.append(characterNameElement);
+    }
   });
