@@ -17,8 +17,17 @@ const button = document.createElement("button");
 button.innerText = "Search";
 rootElement.append(button);
 
+const characterListElement = document.createElement("section");
+rootElement.append(characterListElement);
+
 button.addEventListener("click", () => {
   console.log("clicked! 🤩", input.value);
+
+  fetch(`https://rickandmortyapi.com/api/character/?name=${input.value}`)
+    .then((res) => res.json())
+    .then((response: CharacterApiResponse) => {
+      renderCharacterList(response.results);
+    });
 });
 
 type Character = { name: string; id: number };
@@ -35,17 +44,24 @@ type CharacterApiResponse = {
 
 fetch("https://rickandmortyapi.com/api/character")
   .then((res) => {
-    console.log({ res });
     return res.json();
   })
   .then((response: CharacterApiResponse) => {
     console.log(response);
 
-    for (const character of response.results) {
-      const nameElement = document.createElement("p");
-
-      nameElement.innerText = character.name;
-
-      rootElement.append(nameElement);
-    }
+    renderCharacterList(response.results);
   });
+
+function renderCharacterList(list: Character[]) {
+  characterListElement.innerHTML = "";
+
+  for (const character of list) {
+    const nameElement = document.createElement("p");
+
+    nameElement.innerText = character.name;
+
+    characterListElement.append(nameElement);
+  }
+}
+
+function getData() {}
