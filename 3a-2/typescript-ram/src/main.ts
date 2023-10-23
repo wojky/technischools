@@ -1,3 +1,4 @@
+import { getData } from "./getData";
 import "./style.css";
 
 type Character = {
@@ -39,36 +40,22 @@ searchButtonElement.addEventListener("click", () => {
   // wyciagnij wartosc inputa
   const characterName = inputElement.value;
 
-  // przygotowac url wedlug dokumetancje api
-  // https://rickandmortyapi.com/api/character/?name=rick
+  getData("https://rickandmortyapi.com/api/character", {
+    name: characterName,
+  }).then((response: CharacterApiResponse) => {
+    // wyswielitc postaci wyfiltrowane
+    characterListElement.innerHTML = "";
 
-  const url =
-    "https://rickandmortyapi.com/api/character/?name=" + characterName;
-
-  // wykonać fetcha
-  fetch(url)
-    .then((res) => res.json())
-    .then((response: CharacterApiResponse) => {
-      // wyswielitc postaci wyfiltrowane
-      characterListElement.innerHTML = "";
-
-      addCharactersToContainer(response.results);
-    });
+    addCharactersToContainer(response.results);
+  });
 });
 
 // display list
-fetch("https://rickandmortyapi.com/api/character")
-  .then((res) => res.json())
-  .then((response: CharacterApiResponse) => {
+getData("https://rickandmortyapi.com/api/character").then(
+  (response: CharacterApiResponse) => {
     addCharactersToContainer(response.results);
-  });
-
-// funckja ma przyjac dwa arugmenty, url oraz searchParams
-// zwrocic promise z resultem
-function getData() {}
-
-getData("https://rickandmortyapi.com/api/character", { name: "rick" });
-getData("https://rickandmortyapi.com/api/episode", { episode: "S01E01" });
+  }
+);
 
 function addCharactersToContainer(characters: Character[]) {
   for (const character of characters) {
