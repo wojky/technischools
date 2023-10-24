@@ -32,6 +32,34 @@ searchButtonElement.innerText = "Search";
 
 rootElement.append(inputElement, searchButtonElement);
 
+// add status filter (select)
+const selectStatusElement = document.createElement("select");
+
+["all", "dead", "unknown", "alive"].forEach((status) => {
+  const option = document.createElement("option");
+
+  option.innerText = status;
+  option.value = status === "all" ? "" : status;
+
+  selectStatusElement.append(option);
+});
+rootElement.append(selectStatusElement);
+
+selectStatusElement.addEventListener("change", () => {
+  console.log("😁");
+
+  console.log(selectStatusElement.value);
+
+  getData("https://rickandmortyapi.com/api/character", {
+    status: selectStatusElement.value,
+  }).then((response: CharacterApiResponse) => {
+    // wyswielitc postaci wyfiltrowane
+    characterListElement.innerHTML = "";
+
+    addCharactersToContainer(response.results);
+  });
+});
+
 // display character list container
 const characterListElement = document.createElement("section");
 rootElement.append(characterListElement);

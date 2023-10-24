@@ -1,4 +1,5 @@
 import { getData } from "./getData";
+import { createSelectFilter } from "./selectFilter";
 import "./style.css";
 
 const rootElement: HTMLDivElement = document.querySelector(
@@ -11,21 +12,66 @@ heading.innerText = "Rick and Morty";
 
 rootElement.append(heading);
 
-const input = document.createElement("input");
-rootElement.append(input);
+const input = createSearchInput();
 
 const button = document.createElement("button");
 button.innerText = "Search";
 rootElement.append(button);
 
+const selectStatusFilter = createSelectFilter([
+  {
+    innerText: "All",
+    value: "",
+  },
+  {
+    innerText: "Dead",
+    value: "dead",
+  },
+  {
+    innerText: "Alive",
+    value: "alive",
+  },
+  {
+    innerText: "Unknown",
+    value: "unknown",
+  },
+]);
+
+const selectGenderFilters = createSelectFilter([
+  {
+    innerText: "All",
+    value: "",
+  },
+  {
+    innerText: "Male",
+    value: "male",
+  },
+  {
+    innerText: "Female",
+    value: "female",
+  },
+  {
+    innerText: "Genderless",
+    value: "genderless",
+  },
+  {
+    innerText: "Unknown",
+    value: "unknown",
+  },
+]);
+
+rootElement.append(selectStatusFilter, selectGenderFilters);
+
 const characterListElement = document.createElement("section");
 rootElement.append(characterListElement);
 
 button.addEventListener("click", () => {
-  console.log("clicked! 🤩", input.value);
+  console.log("clicked! 🤩", input.value, selectStatusFilter.value);
 
   getData(`https://rickandmortyapi.com/api/character`, {
     name: input.value,
+    status: selectStatusFilter.value,
+    gender: selectGenderFilters.value,
   }).then((response: CharacterApiResponse) => {
     renderCharacterList(response.results);
   });
@@ -61,4 +107,11 @@ function renderCharacterList(list: Character[]) {
 
     characterListElement.append(nameElement);
   }
+}
+
+function createSearchInput() {
+  const input = document.createElement("input");
+  rootElement.append(input);
+
+  return input;
 }

@@ -7,8 +7,6 @@ export async function getData(
 
   url2.search = sp.toString();
 
-  console.log(url2);
-
   const res = await fetch(url2.href);
   return await res.json();
 }
