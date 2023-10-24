@@ -46,3 +46,6 @@ Rok szkolny 2023/2024
 [excalidraw](https://excalidraw.com/) - program do low-fi makiet / notatek
 
 [trello](https://trello.com/home) - tablica kanbanowa, zarządzanie projektem
+
+![image](https://github.com/wojky/technischools/assets/30092820/2ea828f9-dd7a-4426-a32e-ef863e3e0156)
+
