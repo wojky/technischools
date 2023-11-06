@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+
+type Character = {
+  id: number;
+  name: string;
+};
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentSelectedStatus, setCurrentSelectedStatus] = useState("");
+  const [characters, setCharacters] = useState<Character[]>([]);
 
+  const charactersStatusList = ["all", "dead", "unknown", "alive"];
+
+  console.log({ currentSelectedStatusOnFnBody: currentSelectedStatus });
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h1>Rick and Morty</h1>
+      <label htmlFor="search-input">Szukajka</label>
+      <input id="search-input" placeholder="search" />
+      <button className="">Search</button>
+      <video></video>
+      <select
+        onChange={(e) => {
+          setCurrentSelectedStatus(e.target.value);
+
+          console.log({ currentSelectedStatus });
+        }}
+      >
+        {charactersStatusList.map((status) => (
+          <option key={status} value={status === "all" ? "" : status}>
+            {status}
+          </option>
+        ))}
+      </select>
+      <br />
+      Aktualny status: {currentSelectedStatus}
+    </div>
+  );
 }
 
-export default App
+export default App;
