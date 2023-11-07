@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CharacterListItem } from "./CharacterListItem";
 
 type Character = { name: string; id: number };
@@ -30,9 +30,18 @@ export async function getData(
 function App() {
   console.log("render App");
   const [status, setStatus] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   const [characters, setCharacters] = useState<Character[]>([]);
 
-  console.log(status);
+  useEffect(() => {
+    getData("https://rickandmortyapi.com/api/character").then(
+      (res: CharacterApiResponse) => {
+        setCharacters(res.results);
+      }
+    );
+  }, []);
+
+  console.log(searchTerm);
 
   const characterStatusList = [
     {
@@ -53,31 +62,35 @@ function App() {
     },
   ];
 
-  // const characters: Character[] = [
-  //   {
-  //     id: 1,
-  //     name: "Rick",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Morty",
-  //   },
-  // ];
-
-  let selectedStatus = "";
-
   return (
     <main>
       <h1 className="">Rick and Morty</h1>
       {/* <label htmlFor=""></label> */}
-      <input placeholder="Search..." />
-      <button onClick={() => {}}>Search</button>
+      <input
+        onBlur={(e) => {
+          setSearchTerm(e.target.value);
+        }}
+        placeholder="Search..."
+      />
+      <button
+        onClick={() => {
+          getData("https://rickandmortyapi.com/api/character", {
+            status,
+            name: searchTerm,
+          }).then((res: CharacterApiResponse) => {
+            setCharacters(res.results);
+          });
+        }}
+      >
+        Search
+      </button>
       <select
         onChange={(event) => {
           setStatus(event.target.value);
 
           getData("https://rickandmortyapi.com/api/character", {
             status: event.target.value,
+            name: searchTerm,
           }).then((res: CharacterApiResponse) => {
             setCharacters(res.results);
           });
