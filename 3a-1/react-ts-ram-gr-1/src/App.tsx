@@ -2,6 +2,26 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import { CharacterListItem } from "./CharacterListItem";
 
+function Blanfwe(props: { onCostam: (id: number) => void }) {
+  return (
+    <button
+      onClick={() => {
+        props.onCostam(213);
+      }}
+    ></button>
+  );
+}
+
+function Rodzic() {
+  return (
+    <Blanfwe
+      onCostam={(dane: number) => {
+        console.log(dane);
+      }}
+    />
+  );
+}
+
 type Character = { name: string; id: number };
 
 type CharacterApiResponse = {

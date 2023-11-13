@@ -9,18 +9,19 @@ export type Character = {
 
 function App() {
   const [currentSelectedStatus, setCurrentSelectedStatus] = useState("");
+  const [name, setName] = useState("");
   const [characters, setCharacters] = useState<Character[]>([]);
+  const [search, setSearch] = useState("");
 
   const charactersStatusList = ["all", "dead", "unknown", "alive"];
 
-  console.log({ currentSelectedStatusOnFnBody: currentSelectedStatus });
+  console.log({ search, name, currentSelectedStatus });
 
   useEffect(() => {
     console.log("gererhvjker");
 
     fetch(
-      "https://rickandmortyapi.com/api/character?status=" +
-        currentSelectedStatus
+      `https://rickandmortyapi.com/api/character?name=${name}&status=${currentSelectedStatus}`
     )
       .then((response) => {
         return response.json();
@@ -28,14 +29,27 @@ function App() {
       .then((response: { results: Character[] }) => {
         setCharacters(response.results);
       });
-  }, [currentSelectedStatus]);
+  }, [currentSelectedStatus, name]);
 
   return (
     <div>
       <h1>Rick and Morty</h1>
       <label htmlFor="search-input">Szukajka</label>
-      <input id="search-input" placeholder="search" />
-      <button className="">Search</button>
+      <input
+        onChange={(e) => {
+          setSearch(e.target.value);
+        }}
+        id="search-input"
+        placeholder="search"
+      />
+      <button
+        onClick={() => {
+          setName(search);
+        }}
+        className=""
+      >
+        Search
+      </button>
       <video></video>
       <select
         onChange={(e) => {
