@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
+import CharacterList from "./components/CharacterList";
 
-type Character = {
+export type Character = {
   id: number;
   name: string;
 };
@@ -13,6 +14,22 @@ function App() {
   const charactersStatusList = ["all", "dead", "unknown", "alive"];
 
   console.log({ currentSelectedStatusOnFnBody: currentSelectedStatus });
+
+  useEffect(() => {
+    console.log("gererhvjker");
+
+    fetch(
+      "https://rickandmortyapi.com/api/character?status=" +
+        currentSelectedStatus
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((response: { results: Character[] }) => {
+        setCharacters(response.results);
+      });
+  }, [currentSelectedStatus]);
+
   return (
     <div>
       <h1>Rick and Morty</h1>
@@ -23,8 +40,6 @@ function App() {
       <select
         onChange={(e) => {
           setCurrentSelectedStatus(e.target.value);
-
-          console.log({ currentSelectedStatus });
         }}
       >
         {charactersStatusList.map((status) => (
@@ -34,6 +49,7 @@ function App() {
         ))}
       </select>
       <br />
+      <CharacterList list={characters} />
       Aktualny status: {currentSelectedStatus}
     </div>
   );
