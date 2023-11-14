@@ -1,26 +1,27 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import { CharacterListItem } from "./CharacterListItem";
+import { SearchBox } from "./SearchBox";
 
-function Blanfwe(props: { onCostam: (id: number) => void }) {
-  return (
-    <button
-      onClick={() => {
-        props.onCostam(213);
-      }}
-    ></button>
-  );
-}
+// function Blanfwe(props: { onCostam: (id: number) => void }) {
+//   return (
+//     <button
+//       onClick={() => {
+//         props.onCostam(213);
+//       }}
+//     ></button>
+//   );
+// }
 
-function Rodzic() {
-  return (
-    <Blanfwe
-      onCostam={(dane: number) => {
-        console.log(dane);
-      }}
-    />
-  );
-}
+// function Rodzic() {
+//   return (
+//     <Blanfwe
+//       onCostam={(dane: number) => {
+//         console.log(dane);
+//       }}
+//     />
+//   );
+// }
 
 type Character = { name: string; id: number };
 
@@ -54,12 +55,13 @@ function App() {
   const [characters, setCharacters] = useState<Character[]>([]);
 
   useEffect(() => {
-    getData("https://rickandmortyapi.com/api/character").then(
-      (res: CharacterApiResponse) => {
-        setCharacters(res.results);
-      }
-    );
-  }, []);
+    getData("https://rickandmortyapi.com/api/character", {
+      name: searchTerm,
+      status,
+    }).then((res: CharacterApiResponse) => {
+      setCharacters(res.results);
+    });
+  }, [status, searchTerm]);
 
   console.log(searchTerm);
 
@@ -86,34 +88,14 @@ function App() {
     <main>
       <h1 className="">Rick and Morty</h1>
       {/* <label htmlFor=""></label> */}
-      <input
-        onBlur={(e) => {
-          setSearchTerm(e.target.value);
+      <SearchBox
+        handleClick={(value) => {
+          setSearchTerm(value);
         }}
-        placeholder="Search..."
       />
-      <button
-        onClick={() => {
-          getData("https://rickandmortyapi.com/api/character", {
-            status,
-            name: searchTerm,
-          }).then((res: CharacterApiResponse) => {
-            setCharacters(res.results);
-          });
-        }}
-      >
-        Search
-      </button>
       <select
         onChange={(event) => {
           setStatus(event.target.value);
-
-          getData("https://rickandmortyapi.com/api/character", {
-            status: event.target.value,
-            name: searchTerm,
-          }).then((res: CharacterApiResponse) => {
-            setCharacters(res.results);
-          });
         }}
       >
         {characterStatusList.map((status) => (
