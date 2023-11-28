@@ -1,7 +1,7 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { HomeScreen } from "./src/HomeScreen";
 import { CharactersScreen } from "./src/CharactersScreen";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 export type RootStackParamsList = {
   Home: undefined;
@@ -10,14 +10,18 @@ export type RootStackParamsList = {
   };
 };
 
-const Stack = createNativeStackNavigator<RootStackParamsList>();
+const Stack = createBottomTabNavigator<RootStackParamsList>();
 
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Characters" component={CharactersScreen} />
+        <Stack.Screen
+          name="Characters"
+          component={CharactersScreen}
+          initialParams={{ secret: "xDDD" }}
+        />
         {/* <Stack.Screen name="Episodes" component={CharactersScreen} /> */}
       </Stack.Navigator>
     </NavigationContainer>
