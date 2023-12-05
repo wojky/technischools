@@ -1,7 +1,14 @@
-export function CharacterDetails(props: { imageUrl: string }) {
+import { useLoaderData } from "react-router-dom";
+
+export function CharacterDetails() {
+  const d = useLoaderData();
+
+  console.log({ d });
+
   return (
     <>
-      <img src={props.imageUrl} />
+      Name:
+      <img src="" />
     </>
   );
 }

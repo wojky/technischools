@@ -20,10 +20,15 @@ const router = createBrowserRouter([
         path: "/characters",
         element: <CharactersPage />,
         children: [
-          // {
-          //   path: ":characterId",
-          //   element: <CharacterDetails />,
-          // },
+          {
+            loader: async ({ params }) => {
+              console.log(params);
+
+              return params["charactedId"];
+            },
+            path: ":characterId",
+            element: <CharacterDetails />,
+          },
         ],
       },
       // {
