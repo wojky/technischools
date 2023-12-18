@@ -7,7 +7,7 @@ HASŁO DO WIFI: TS2023!@%
 Wypełniamy według wzoru:
 
 1. JakKap https://github.com/GarySfer/first-expo-app
-2. JanSam https://github.com/AnanasekE/TechniPAM_s1
+2. JanSam https://github.com/AnanasekE/wynncraftExpoApp
 3. sebtrz https://github.com/SebTrz/pustyProjekt
 4. JanGiz https://github.com/jgiz/projectzaliczeniowy
 5. barpre https://github.com/ArtishGH/mobile-app-coding
