@@ -9,7 +9,7 @@ Wypełniamy według wzoru:
 2.
 3.
 4. artpie https://github.com/ArturPiechal/PAM-project-
-5.
+5. artpie nowy - https://github.com/ArturPiechal/pam-project
 6.
 7.
 8.
@@ -19,3 +19,4 @@ Wypełniamy według wzoru:
 12.
 13.
 14.
+15.
