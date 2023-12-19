@@ -10,7 +10,7 @@ Wypełniamy według wzoru:
 1. magsat https://github.com/MagdalSaturs/AplikacjaMobilna
 2. natost https://github.com/Ghost6818/Mobile-app
 3. vlaada https://github.com/VladimirAdamovich1/pam-first-project
-4. ArtPiech https://github.com/ArturPiechal/PAM-project-
+4. ArtPiech [https://github.com/ArturPiechal/PAM-project-](https://github.com/ArturPiechal/pam-project)
 5. Oliwier https://github.com/Olssson/Aplikacje_Mobilne
 6. adaczy https://github.com/niebieskiczlowiek/MobileApp-Repo.git
 7. tomogr https://github.com/Jukacz/React-Native-PAM
